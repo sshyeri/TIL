@@ -82,4 +82,6 @@ student@DESKTOP MINGW64 ~/desktop/til (master)
 $
 
 ```
+*두번째 커밋 시에는 $ git remote add origin https://github.com/sshyeri/TIL.git 불필요*
+
 
