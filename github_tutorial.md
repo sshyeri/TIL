@@ -82,6 +82,10 @@ student@DESKTOP MINGW64 ~/desktop/til (master)
 $
 
 ```
-*두번째 커밋 시에는 $ git remote add origin https://github.com/sshyeri/TIL.git 불필요*
+*두번째 커밋 시에는 $ git remote add origin https://github.com/sshyeri/TIL.git 불필요, git push만 써도 됌*
+
+*add 여러개 가능, commit에 여러개 쌓고 한번에 푸시 가능*
+
+*commit은 버전 달아주는 것 ! 도장 찍는 듯이.*
 
 
