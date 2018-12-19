@@ -1,0 +1,40 @@
+
+.text-center{
+    text-align: center;
+}
+.text-large{
+    font-size: 200%;
+}
+.text-red{
+    color: crimson;
+}
+.text-blue{
+    color : blue
+}
+*{
+    font-family: 'Do Hyeon', sans-serif;
+    background: steelblue;
+    font-size: 20px
+}
+h1, p{
+    color: white;
+} 
+#lunch{
+    background: lightcoral;
+    color: whitesmoke;
+}
+#dinner{
+    color: darkblue;
+}
+.container{
+    color : red;
+} 
+/* 아래쪽 설정이 마지막 */
+
+/* h1 { 
+    background: rosybrown; 
+}
+p{
+    background: salmon;
+    color: whitesmoke;
+} */
