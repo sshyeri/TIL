@@ -1,3 +1,5 @@
+## LOTTO 당첨번호 Scraping
+
 ~~~python
 from bs4 import BeautifulSoup
 import requests
@@ -40,18 +42,15 @@ for i in numbers:
 ### set
 
 - 중복 허용x
-
 - index없어요
-
 - 출력은 중괄호지만 딕셔너리 아니에요
-
 - 선언할때는 괄호로 선언해야해요
 
 
 
 ### 집합 연산
 
-~~~bash
+```bash
 >>> set1 = set([1,2,3,4,5,6,7])
 >>> set2 = set([5,6,7,8,9,10,11])
 >>> set1.intersection(set2)
@@ -66,7 +65,7 @@ for i in numbers:
 {1, 2, 3, 4}
 >>> set2 - set1
 {8, 9, 10, 11}
-~~~
+```
 
 `alt`+` shift`+`↓`: 복사
 
