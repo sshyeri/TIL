@@ -67,14 +67,6 @@ for i in numbers:
 {8, 9, 10, 11}
 ```
 
-`alt`+` shift`+`↓`: 복사
-
-`alt`+ `↓` : 위치 이동
-
-`ctrl`+ `d` : 같은 변수 잡기
-
-`alt`+커서(`ctrl`) /맥 :`option`+`command`: 한번에 여러군데에 커서 놓기
-
 
 
 ### code
