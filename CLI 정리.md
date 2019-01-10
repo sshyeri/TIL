@@ -2,14 +2,16 @@
 
 ~~~bash
 vi ~/.bash_profile
+vi ~/.zshrc
 
 i
 
 alias jp="jupyter notebook"    
-
-:wq
+ 
+esc + :wq
 
 source ~/.bash_profile
+source ~/.zshrc
 ~~~
 
 -> jp하면 쥬피터 열림
