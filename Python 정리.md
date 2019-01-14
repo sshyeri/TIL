@@ -1,8 +1,8 @@
-### Tip
+## Tip
 
  - 잘 모르겠을 때는 [python tutor](http://pythontutor.com/visualize.html#mode=edit)에 visualizing 해보기
 
-### stdin 
+## stdin 
 
 ​	**표준 입력 함수, sys에 내장.(import sys 필요)**
 
@@ -48,7 +48,7 @@ $ python playground.py
 ['1 2 3 4\n', '5\n']
 ~~~
 
-### str <-> list
+## str <-> list
 
 ~~~python
 >>> char = list('hello')
@@ -72,7 +72,7 @@ $ python playground.py
 '10:34:17'
 ~~~
 
-###  대소문자
+##  대소문자
 
 ~~~python
 #단어별로 맨 앞 글자 대문자로
@@ -91,13 +91,13 @@ print(s.lower())
 
 
 
-### 재귀
+## 재귀
 
  최대 재귀 깊이가 1,000번
 
  for문이 더 효율적일 때가 많음
 
-### Class
+## Class
 
 <wikipedia - 객체지향 프로그래밍>
 
@@ -244,3 +244,9 @@ p2.greeting()
 안녕하세요. 둘리입니다. 0살입니다.
 ```
 
+
+
+## List
+
+- List는 함수에 넘어갈 때 참조가 아닌 **원본**이 넘어감! (reference 타입들 : 딕셔너리, 셋, 클래스, 객체 등 )
+- 
