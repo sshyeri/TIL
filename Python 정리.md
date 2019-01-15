@@ -2,7 +2,7 @@
 
  - 잘 모르겠을 때는 [python tutor](http://pythontutor.com/visualize.html#mode=edit)에 visualizing 해보기
 
-## stdin 
+## 입력 
 
 ​	**표준 입력 함수, sys에 내장.(import sys 필요)**
 
@@ -47,6 +47,49 @@ $ python playground.py
 ^Z
 ['1 2 3 4\n', '5\n']
 ~~~
+
+####  한줄에 들어온 값 원하는 대로 집어넣기
+
+~~~python
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+~~~
+
+~~~
+3
+Krishna 67 68 69
+Arjun 70 98 63
+Malika 52 56 60
+~~~
+
+~~~python
+print(name)
+>>> Krishna
+print(scores)
+>>> [67, 68, 69]
+~~~
+
+## float
+
+#### 소수점 이하 몇자리 표현
+
+~~~python
+round(3.87901,2)
+>>> 3.88
+round(3.7, 2)
+>>> 3.7
+'%.2f'%8.4
+>>> '8.40'
+'%.10f'%8.7456
+>>> '8.7456000000'
+~~~
+
+
 
 ## str <-> list
 
@@ -244,9 +287,248 @@ p2.greeting()
 안녕하세요. 둘리입니다. 0살입니다.
 ```
 
+### 상속
+
+- 자식 클래스에서는  부모 클래스의 속성과 메소드를 기재하지 않아도 포함됨.
+- 메소드 오버라이딩이 가능. 
+
+~~~python
+class 부모클래스:
+    ~~~~
+class 자식클래스(부모클래스):
+    ~~~~
+~~~
+
+**예시 코드**
+
+
+~~~python
+class Person:
+	def __init__(self, firstName, lastName, idNumber):
+		self.firstName = firstName
+		self.lastName = lastName
+		self.idNumber = idNumber
+	def printPerson(self):
+		print("Name:", self.lastName + ",", self.firstName)
+		print("ID:", self.idNumber)
+class Student(Person):		#속성들을 굳이 나열해주지 않아도 되지만
+    def __init__(self, firstName, lastName, idNumber, scores): 
+        self.firstName = firstName	#선언과 함께 속성을 초기화 하고 싶을 
+		self.lastName = lastName	#시에는 초기화 함수에 다시 써 줘야 함
+		self.idNumber = idNumber
+        self.scores = scores
+    def calculate(self):
+        ave = sum(self.scores)/len(scores)
+        if ave >= 90:
+            return 'O'
+        elif ave >= 80:
+            return 'E'
+        else:
+            return 'T'
+
+s = Student(Heraldo, Memelli, 8135627, [100, 80])	
+s.printPerson()				#부모클래스의 메소드 사용 가능
+print("Grade:", s.calculate())
+~~~
+
+```
+Name: Memelli, Heraldo
+ID: 8135627
+Grade: O
+```
+
+#### 메소드 오버라이딩
+
+- 부모 클래스의 메소드를 자식 클래스에서 재정의 
+-  부모 클래스의 오버라이딩 된 메소드는 무시되고 자식클래스의 메소드가 수행됨
+
+~~~python
+class Student(Person):
+    #생략
+    def printPerson(self):
+        print(f"{self.name}의 등급은 {self.calculate}입니다.")
+s.printPerson()	
+~~~
+
+~~~
+Heraldo의 등급은 O입니다.
+~~~
+
+- 부모 메소드 + 자식 메소드도 가능
+- `super()` 사용
+
+~~~ python
+class Student(Person):
+    #생략
+    def printPerson(self):
+        super().printPerson
+        print(f"{self.name}의 등급은 {self.calculate}입니다.")
+s.printPerson()	
+~~~
+
+~~~
+Name: Memelli, Heraldo
+ID: 8135627
+Grade: O
+Heraldo의 등급은 O입니다.
+~~~
+
+
+#### 다중상속
+
+- C#,  Java는 불가능
+- C++, 파이썬은 가능
+- 상속 개수에는 제한X
+- 메소드 중첩 시 먼저 입력된 부모의 메소드를 상속
+
+~~~python
+class 부모1:
+ ...
+class 부모2:
+ ...
+class 자식(부모1, 부모2):		#메소드 중첩 시 부모1의 메소드 사용
+ ...
+~~~
+
 
 
 ## List
 
 - List는 함수에 넘어갈 때 참조가 아닌 **원본**이 넘어감! (reference 타입들 : 딕셔너리, 셋, 클래스, 객체 등 )
 - 
+
+## Dict
+
+#### 최대 키/값 얻기
+
+~~~python
+my_dict = {'a':10, 'b':30, 'c':25, 'd':30}
+max(my_dict.items(), key = lambda x: x[0])
+>>>> ('c', 25)
+max(my_dict.items(), key = lambda x: x[1])
+>>>> ('b', 30)
+max(my_dict.items(), key = lambda x: x[1])[0]
+>>>> 'b'
+key, value = max(my_dict.items(), key = lambda x: x[1])
+key
+>>> 'b'
+value
+>>> 30
+[x for x,y in my_dict.items() if y==max(my_dict.values())]
+>>> ['b', 'd']
+~~~
+
+#### 정렬하기
+
+~~~python
+x = sorted(my_dict, key=(lambda key : my_dict[key]), reverse=True)
+>>> ['b','d','c','a']
+~~~
+
+
+
+
+
+
+## lambda
+
+- 함수를 딱 한 줄만으로 만들게 해줌
+
+~~~~python
+lambda 인자 : 표현식
+~~~~
+
+ex) 두 수 곱하기
+
+~~~python
+(lambda x, y : x + y)(10, 20)
+>>> 30
+~~~
+
+- map 에서 사용하기
+
+  ~~~python
+  list(map(lambda x: x**2, range(5))
+  >>>[0, 1, 2, 4, 9, 16]
+  ~~~
+
+
+- filter
+
+  ~~~python
+  list(filter(lambda x: x%2, range(10)))
+  >>>[1, 3, 5, 7, 9]
+  ~~~
+
+  
+
+## module
+
+### numpy(행렬)
+
+- n차원 배열 객체
+
+#### 생성 함수
+
+
+
+#### tranpose(전치)
+
+- 행렬의 인덱스가 바뀌는 변환
+
+![1547536909667](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1547536909667.png)
+
+~~~python
+import numpy
+print([[1,2,3], [4,5,6]])
+my_array = numpy.array([[1,2,3], [4,5,6]])
+print(my_array)
+print(numpy.transpose(my_array))
+~~~
+
+~~~
+[[1, 2, 3], [4, 5, 6]]
+[[1 2 3]
+ [4 5 6]]
+[[1 4]
+ [2 5]
+ [3 6]]
+~~~
+
+#### flatten(1차원 배열로 변환)
+
+~~~python
+import numpy
+my_array = numpy.array([[1,2,3], [4,5,6]])
+print (my_array.flatten())
+>>> [1 2 3 4 5 6]
+~~~
+
+#### concatenate(배열 결합)
+
+```python
+# axis=0 방향으로 결합, axis 기본값=0
+my_array = np.concatenate((a, b))
+print(my_array)
+>>> [[1, 2, 3],
+	[4, 5, 6],
+    [7, 8, 9],
+    [10, 11, 12]]
+    
+# axis = 1 방향으로 결합
+my_array = np.concatenate((a, b), axis=1)
+print(my_array)
+>>> [[1, 2, 3], [7, 8, 9], 
+     [4, 5, 6], [10, 11, 12]]
+```
+
+
+
+
+
+#### axis
+
+
+
+
+
