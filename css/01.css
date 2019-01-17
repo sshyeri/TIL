@@ -1,0 +1,23 @@
+html{
+    font-size: 20px;
+}
+
+ol, ol li{
+    font-size: 1.2rem;
+    color : rgb(218, 150, 162);
+}
+
+ul, ul li{
+    font-size: 1.2em;
+    color: #407B38;
+}   
+
+/* 클래스는 .으로 선택 */
+.vh{
+    font-size: 5vh;
+    color: rgba(240, 110, 120, 0.5);
+}
+
+.vw{
+    font-size: 5vw;
+}

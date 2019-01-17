@@ -1,0 +1,46 @@
+.square{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: darkgray;
+    color: white;
+}
+.relative-box{
+    position: relative;
+    background-color: navy;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-box {
+    position: absolute;
+    background-color: chocolate;
+    top: 30px;
+    left: 30px;
+}
+.fixed {
+    position: fixed;
+    background-color: coral;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+}
+/* z-index:숫자가 높으면 위로. */
+.z-index-1 {
+    background-color: brown;
+    top: 300px;
+    left: 300px;
+    z-index: 4;
+}
+.z-index-2 {
+    background-color:  green;
+    top: 350px;
+    left: 350px;
+    z-index: 5;
+}
+.z-index-3 {
+    background-color: yellowgreen;
+    top: 400px;
+    left: 400px;
+    z-index: 3;
+}

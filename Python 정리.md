@@ -604,11 +604,19 @@ print(my_array)
      [4, 5, 6], [10, 11, 12]]
 ```
 
-
-
-
-
 #### axis
+
+
+
+
+
+## builtin functions
+
+### hash()
+
+
+
+#### 
 
 
 
