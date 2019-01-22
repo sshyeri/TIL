@@ -17,9 +17,9 @@
 #             print(arr[j], end =",")
 #     print()
 
-arr = [-7, -3, -2, 5, 8]
+arr = [-7, -3, -2, 5]
 cnt = 0
-for i in range(1, 2**len(arr)):
+for i in range(1,1<<len(arr)):
     subset = [arr[j] for j in range(len(arr)) if i & (1 << j)]
     if sum(subset) == 0:
         print(f'{subset} : True')

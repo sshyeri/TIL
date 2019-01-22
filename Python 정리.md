@@ -115,7 +115,47 @@ round(3.7, 2)
 '10:34:17'
 ~~~
 
-##  대소문자
+## String
+
+#### 문자 판별 메소드
+
+~~~python
+str.isalnum() 
+>>> print 'ab123'.isalnum()
+True
+>>> print 'ab123#'.isalnum()
+False
+
+str.isalpha()
+>>> print 'abcD'.isalpha()
+True
+>>> print 'abcd1'.isalpha()
+False
+
+str.isdigit()
+>>> print '1234'.isdigit()
+True
+>>> print '123edsd'.isdigit()
+False
+
+str.islower()
+>>> print 'abcd123#'.islower()
+True
+>>> print 'Abcd123#'.islower()
+False
+
+str.isupper()
+>>> print 'ABCD123#'.isupper()
+True
+>>> print 'Abcd123#'.isupper()
+False
+~~~
+
+
+
+
+
+####  대소문자
 
 ~~~python
 #단어별로 맨 앞 글자 대문자로
@@ -130,6 +170,10 @@ print(s.upper())
 #모든 문자열을 소문자로
 print(s.lower())
 #-> hi, i'm hyeri.
+
+#대<->소문자간 변경
+print(s.swapcase())
+#-> hI, I'M HYERI.
 ~~~
 
 
