@@ -120,7 +120,7 @@ round(3.7, 2)
 #### 문자 판별 메소드
 
 ~~~python
-str.isalnum() 
+str.isalnum() #alphanumeric
 >>> print 'ab123'.isalnum()
 True
 >>> print 'ab123#'.isalnum()
