@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Jua&subset=korean');
+.section{
+    height: 350px;
+    background-image: url(abstract-analog-art-390089.jpg);
+    background-size: cover;
+    text-align: center;    
+    font-family: 'Jua', sans-serif;  
+    font-size: 100px;  
+    
+}
+h2{
+    align-content: center;
+    
+}
+body{
+    font-family: 'Do Hyeon', sans-serif;
+}
+.shortline {
+    width: 70px;
+    height: 3px;
+    background: darkorange;
+    
+}
