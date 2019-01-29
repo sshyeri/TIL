@@ -178,6 +178,99 @@ print(s.swapcase())
 
 
 
+#### 정렬
+
+`.ljust(width)` : 왼쪽 정렬
+
+~~~python
+>>> width = 20
+>>> print 'HackerRank'.ljust(width,'-')
+HackerRank----------  
+
+>>> print('hi'.ljust(10))
+hi
+~~~
+
+
+
+`.center(width)` : 가운데 정렬
+
+~~~python
+>>> width = 20
+>>> print 'HackerRank'.center(width,'-')
+-----HackerRank-----
+
+>>> print('hi'.center(10))
+    hi
+~~~
+
+
+
+`.rjust(width)` : 오른쪽 정렬
+
+~~~python
+>>> width = 20
+>>> print 'HackerRank'.rjust(width,'-')
+----------HackerRank
+
+>>> print('hi'.rjust(10))
+        hi
+~~~
+
+
+
+####  ASCII
+
+~~~python
+>>> ord('A')
+65
+>>> chr(65)
+'A'
+>>> chr(120)
+'x'
+>>> chr(ord('S') + 1)
+'T'
+~~~
+
+![1548641214616](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1548641214616.png)
+
+
+
+#### 위치 찾기 (find와 index)
+
+`.find()` : 처음 나오는 위치 반환, 존재하지 않는다면 **-1 반환**
+
+~~~python
+>>> a = 'Hyeri'
+>>> a.find('h')
+-1
+>>> a.find('y')
+1
+>>> a.find('i')
+4
+
+~~~
+
+
+
+`.index()`: 처음 나오는 위치 반환, 존재하지 않는다면 **오류 반환**
+
+~~~python
+>>> a = 'Hyeri'
+>>> a.index('h')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt
+>>> a.index('y')
+1
+>>> a.index('i')
+4
+~~~
+
+
+
+
+
 ## 재귀
 
  최대 재귀 깊이가 1,000번
@@ -520,8 +613,9 @@ class 자식(부모1, 부모2):		#메소드 중첩 시 부모1의 메소드 사�
 
 ## List
 
-- List는 함수에 넘어갈 때 참조가 아닌 **원본**이 넘어감! (reference 타입들 : 딕셔너리, 셋, 클래스, 객체 등 )
-- 
+- List는 함수에 넘어갈 때 참조가 아닌 **원본**이 넘어감! (reference 타입들 : 딕셔너리, 셋, 클래스, 객체 등 ) : `mutable`
+
+  
 
 ## Dict
 
@@ -650,6 +744,30 @@ print(my_array)
 
 #### axis
 
+### itertools
+
+#### itertools.product()
+
+: cartesian product(곱집합, 데카르트 곱)
+
+~~~python
+>>> from itertools import product
+>>>
+>>> print list(product([1,2,3],repeat = 2))
+[(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+>>>
+>>> print list(product([1,2,3],[3,4]))
+[(1, 3), (1, 4), (2, 3), (2, 4), (3, 3), (3, 4)]
+>>>
+>>> A = [[1,2,3],[3,4,5]]
+>>> print list(product(*A))
+[(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5), (3, 3), (3, 4), (3, 5)]
+>>>
+>>> B = [[1,2,3],[3,4,5],[7,8]]
+>>> print list(product(*B))
+[(1, 3, 7), (1, 3, 8), (1, 4, 7), (1, 4, 8), (1, 5, 7), (1, 5, 8), (2, 3, 7), (2, 3, 8), (2, 4, 7), (2, 4, 8), (2, 5, 7), (2, 5, 8), (3, 3, 7), (3, 3, 8), (3, 4, 7), (3, 4, 8), (3, 5, 7), (3, 5, 8)]
+~~~
+
 
 
 
@@ -666,3 +784,4 @@ print(my_array)
 
 
 
+![]()
