@@ -132,6 +132,31 @@ while i > 0:
     arr //= 10
 ~~~
 
+### if else 문과 and or
+
+~~~python
+if a:
+    k = b
+else:
+    k = c
+--------------
+k = (a and b) or c
+~~~
+
+~~~python
+def my_bin(num):
+    if num == 1:
+        return '0b1'
+    else:
+        return my_bin(num//2) + str(num % 2)
+----------------------
+def my_bin(num):
+    return '0b1' if num == 1 else my_bin(num//2) + str(num % 2)
+-----------------------
+def my_bin(num):
+    return (num == 1 and '0b1') or (my_bin(num//2) + str(num % 2))
+~~~
+
 
 
 ### 정수표현
