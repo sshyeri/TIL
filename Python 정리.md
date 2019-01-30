@@ -615,7 +615,6 @@ class 자식(부모1, 부모2):		#메소드 중첩 시 부모1의 메소드 사�
 
 - List는 함수에 넘어갈 때 참조가 아닌 **원본**이 넘어감! (reference 타입들 : 딕셔너리, 셋, 클래스, 객체 등 ) : `mutable`
 
-  
 
 ## Dict
 
@@ -680,9 +679,67 @@ ex) 두 수 곱하기
   >>>[1, 3, 5, 7, 9]
   ~~~
 
-  
 
 ## module
+
+### datetime
+
+#### datetime.datetime 클래스
+
+  - datetime.datetime 클래스 객체 속성 :
+
+    > year : 연도	month : 월 		day : 일		hour : 시
+    >
+    > minute : 분 	second : 초 		microsecond : 마이크로초
+
+- datetime.datetime 클래스 method:
+
+  > weekday() : 요일 반환(0:월, 1:화, 2:수, 3:목, 4:금, 5:토, 6:일)
+  >
+  > strftime() : 문자열 반환
+  >
+  > now() : 현재 시각 출력
+  >
+  > date() : 날짜 정보만 가지는  datetime.date클래스 객체 반환
+  >
+  > time() : 시간 정보만 가지는 datetime.time클래스 객체 반환
+  >
+  > strptime() : 문자열로부터 날짜와 시간 정보를 읽어 datetime.datetime 클래스 객체 반환
+
+~~~python
+>>> dt = datetime.datetime.now()
+>>> dt.date()
+datetime.date(2019, 1, 30)
+>>> dt.time()
+datetime.time(17, 40, 45, 963659)
+>>> dt.weekday()
+2
+>>> dt.strftime("%A %d. %B %Y")
+'Wednesday 30. January 2019'
+>>>  dt.strftime("%H hour %M min %S sec")
+'17 hour 50 min 07 sec'
+>>> datetime.datetime.strptime("2017-01-02 14:44", "%Y-%m-%d %H:%M")
+datetime.datetime(2017, 1, 2, 14, 44)
+
+~~~
+
+[이어서 정리](https://datascienceschool.net/view-notebook/465066ac92ef4da3b0aba32f76d9750a/)
+
+
+
+
+
+~~~python
+import datetime
+today = datetime.datetime.now()
+dday = datetime.datetime(2017, 3, 25)
+td = today - dday
+td.days
+
+>>>676
+~~~
+
+
 
 ### numpy(행렬)
 
