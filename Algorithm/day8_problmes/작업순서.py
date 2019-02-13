@@ -1,30 +1,27 @@
 import sys
 sys.stdin = open("input.txt")
 
-#위상정렬
-def chk():
-    for i in range(1,v+1):
-        if degree[i] == 0:
-            result.append(i)
-            degree[i] -= 1
-            for j in range(1, v+1):
-                if i in post[j]:
-                    degree[j] -= 1
-
 for tc in range(1, 11):
     v, e = map(int, input().split())
     s = list(map(int,input().split()))
     post = [[] for i in range(v+1)]
     for i in range(0,len(s)-1,2):
         post[s[i+1]] += [s[i]]
-
     degree = [len(post[i]) for i in range(v+1)]
     result = []
 
-
-
-
-
+    sdg = sum(degree)
+    while sdg > -v:
+        for i in range(1, v+1):
+            if degree[i] == 0:
+                result.append(i)
+                degree[i] -= 1
+                sdg -= 1
+                for j in range(1, v+1):
+                    if i in post[j]:
+                        degree[j] -= 1
+                        sdg -= 1
+    print(f'#{tc+1}', *result)
     # for i in range(1, v+1):
     #     if not post[i] and not visited[i]:
     #         visited[i] = True
@@ -40,9 +37,9 @@ for tc in range(1, 11):
     #                 visited[j] = True
     #         result.insert(min_idx, i)
     #         visited[i] = True
-    print(post)
-    print(degree)
-    print(result)
+    # print(post)
+    # print(degree)
+    # print(result)
     # print(f'#{tc}', *result)
 # def search(n):
 #     if visited[n]:
