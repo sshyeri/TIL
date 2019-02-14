@@ -1,8 +1,8 @@
-## Tip
+# Tip
 
  - 잘 모르겠을 때는 [python tutor](http://pythontutor.com/visualize.html#mode=edit)에 visualizing 해보기
 
-## 입력 
+# 입력 
 
 ​	**표준 입력 함수, sys에 내장.(import sys 필요)**
 
@@ -48,7 +48,7 @@ $ python playground.py
 ['1 2 3 4\n', '5\n']
 ~~~
 
-####  한줄에 들어온 값 원하는 대로 집어넣기
+###  한줄에 들어온 값 원하는 대로 집어넣기
 
 ~~~python
 if __name__ == '__main__':
@@ -74,9 +74,9 @@ print(scores)
 >>> [67, 68, 69]
 ~~~
 
-## float
+# float
 
-#### 소수점 이하 몇자리 표현
+### 소수점 이하 몇자리 표현
 
 ~~~python
 round(3.87901,2)
@@ -91,33 +91,9 @@ round(3.7, 2)
 
 
 
-## str <-> list
+# String
 
-~~~python
->>> char = list('hello')
->>> char
-['h', 'e', 'l', 'l', 'o']
-
-# string => list
->>> words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
->>> words_list = words.split()
->>> words_list
-['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
-
->>> time_str = "10:34:17"
->>> time_str.split(':')
-['10', '34', '17']
-
-# list => string
->>> time_list
-['10', '34', '17']
->>> ':'.join(time_list)
-'10:34:17'
-~~~
-
-## String
-
-#### 문자 판별 메소드
+### 문자 판별 메소드
 
 ~~~python
 str.isalnum() #alphanumeric
@@ -155,7 +131,7 @@ False
 
 
 
-####  대소문자
+###  대소문자
 
 ~~~python
 #단어별로 맨 앞 글자 대문자로
@@ -178,7 +154,7 @@ print(s.swapcase())
 
 
 
-#### 정렬
+### 정렬
 
 `.ljust(width)` : 왼쪽 정렬
 
@@ -219,7 +195,7 @@ hi
 
 
 
-####  ASCII
+###  ASCII
 
 ~~~python
 >>> ord('A')
@@ -236,7 +212,7 @@ hi
 
 
 
-#### 위치 찾기 (find와 index)
+### 위치 찾기 (find와 index)
 
 `.find()` : 처음 나오는 위치 반환, 존재하지 않는다면 **-1 반환**
 
@@ -269,15 +245,35 @@ KeyboardInterrupt
 
 
 
+## str <-> list
+
+```python
+>>> char = list('hello')
+>>> char
+['h', 'e', 'l', 'l', 'o']
+
+# string => list
+>>> words = "python은 프로그래밍을 배우기에 아주 좋은 언어입니다."
+>>> words_list = words.split()
+>>> words_list
+['python은', '프로그래밍을', '배우기에', '아주', '좋은', '언어입니다.']
+
+>>> time_str = "10:34:17"
+>>> time_str.split(':')
+['10', '34', '17']
+
+# list => string
+>>> time_list
+['10', '34', '17']
+>>> ':'.join(time_list)
+'10:34:17'
+```
+
+# 
 
 
-## 재귀
 
- 최대 재귀 깊이가 1,000번
-
- for문이 더 효율적일 때가 많음
-
-## Class
+# Class
 
 <wikipedia - 객체지향 프로그래밍>
 
@@ -291,7 +287,11 @@ KeyboardInterrupt
 
 - **메서드(Method)** - 클래스로부터 생성된 객체를 사용하는 방법으로서 객체에 명령을 내리는 것이라 할 수 있다. 메서드는 한 객체의 속성을 조작하는 데 사용된다.
 
-####  클래스 객체
+
+
+
+
+###  클래스 객체
 
 ```python
 class ClassName:
@@ -324,7 +324,9 @@ class Person:
         print(f"Hello, I'm {self.name}.")
 ~~~
 
-#### 인스턴스 객체
+
+
+### 인스턴스 객체
 
 * 인스턴스 객체는 `ClassName()`을 호출함으로써 선언된다.
 * 인스턴스 객체와 클래스 객체는 서로 다른 이름 공간을 가지고 있다.
@@ -424,7 +426,9 @@ p2.greeting()
 안녕하세요. 둘리입니다. 0살입니다.
 ```
 
-#### 클래스 변수 / 인스턴스 변수
+
+
+### 클래스 변수 / 인스턴스 변수
 
 - 클래스 변수 : 모든 인스턴스가 공유
 - 인스턴스 변수 : 인스턴스별로 각각 가지는 변수
@@ -457,7 +461,7 @@ me.population
 
 
 
-#### 정적 메서드 
+### 정적 메서드 
 
 - 메서드 호출을 인스턴스가 아닌 클래스가 할 수 있도록 구성
 - 정적 메소드는 객체가 전달되지 않음.
@@ -466,7 +470,7 @@ me.population
 
 
 
-#### 클래스 메서드
+### 클래스 메서드
 
 - 메서드 호출을 인스턴스가 아닌 클래스가 할 수 있도록 구성
 
@@ -477,7 +481,7 @@ me.population
 
 
 
-#### 추상 메서드
+### 추상 메서드
 
 - 동물 - 고양이과 - 호랑이를 생각해볼 것.
 - 동물은 너무 추상적이어서 메서드를 정의하지 못하게 함.
@@ -556,6 +560,8 @@ ID: 8135627
 Grade: O
 ```
 
+
+
 #### 메소드 오버라이딩
 
 - 부모 클래스의 메소드를 자식 클래스에서 재정의 
@@ -593,6 +599,7 @@ Heraldo의 등급은 O입니다.
 ~~~
 
 
+
 #### 다중상속
 
 - C#,  Java는 불가능
@@ -611,14 +618,17 @@ class 자식(부모1, 부모2):		#메소드 중첩 시 부모1의 메소드 사�
 
 
 
-## List
+
+
+# List
 
 - List는 함수에 넘어갈 때 참조가 아닌 **원본**이 넘어감! (reference 타입들 : 딕셔너리, 셋, 클래스, 객체 등 ) : `mutable`
 
 
-## Dict
 
-#### 최대 키/값 얻기
+# Dict
+
+### 최대 키/값 얻기
 
 ~~~python
 my_dict = {'a':10, 'b':30, 'c':25, 'd':30}
@@ -637,7 +647,7 @@ value
 >>> ['b', 'd']
 ~~~
 
-#### 정렬하기
+### 정렬하기
 
 ~~~python
 x = sorted(my_dict, key=(lambda key : my_dict[key]), reverse=True)
@@ -649,7 +659,7 @@ x = sorted(my_dict, key=(lambda key : my_dict[key]), reverse=True)
 
 
 
-## lambda
+# lambda
 
 - 함수를 딱 한 줄만으로 만들게 해줌
 
@@ -680,11 +690,101 @@ ex) 두 수 곱하기
   ~~~
 
 
-## module
 
-### datetime
+# module
 
-#### datetime.datetime 클래스
+##  [collections](https://docs.python.org/ko/3.6/library/collections.html#module-collections)
+
+| classes                                                      |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [`namedtuple()`](https://docs.python.org/ko/3.6/library/collections.html#collections.namedtuple) | factory function for creating tuple subclasses with named fields |
+| [`deque`](https://docs.python.org/ko/3.6/library/collections.html#collections.deque) | list-like container with fast appends and pops on either end |
+| [`ChainMap`](https://docs.python.org/ko/3.6/library/collections.html#collections.ChainMap) | dict-like class for creating a single view of multiple mappings |
+| [`Counter`](https://docs.python.org/ko/3.6/library/collections.html#collections.Counter) | dict subclass for counting hashable objects                  |
+| [`OrderedDict`](https://docs.python.org/ko/3.6/library/collections.html#collections.OrderedDict) | dict subclass that remembers the order entries were added    |
+| [`defaultdict`](https://docs.python.org/ko/3.6/library/collections.html#collections.defaultdict) | dict subclass that calls a factory function to supply missing values |
+| [`UserDict`](https://docs.python.org/ko/3.6/library/collections.html#collections.UserDict) | wrapper around dictionary objects for easier dict subclassing |
+| [`UserList`](https://docs.python.org/ko/3.6/library/collections.html#collections.UserList) | wrapper around list objects for easier list subclassing      |
+| [`UserString`](https://docs.python.org/ko/3.6/library/collections.html#collections.UserString) | wrapper around string objects for easier string subclassing  |
+
+
+
+### Counter()
+
+> `dict`의 서브 클래스로 원소들의 갯수를 세어주는 메소드
+>
+> 원소를 딕셔너리의 키, 갯수를 값으로 저장한다.
+
+~~~python
+>>> from collections import Counter 
+>>> a = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+>>> cnt = Counter(a)
+>>> cnt
+Counter({'blue': 3, 'red': 2, 'green': 1})
+>>> cnt[a[0]]
+2
+>>> cnt['green']
+1
+
+>>> c = Counter('gallahad')
+>>> c
+Counter({'a': 3, 'l': 2, 'g': 1, 'h': 1, 'd': 1})
+>>> c = Counter(['eggs', 'ham'])
+>>> c['bacon']
+0
+
+>>> # Find the ten most common words in Hamlet
+>>> import re
+>>> words = re.findall(r'\w+', open('hamlet.txt').read().lower())
+>>> Counter(words).most_common(10)
+[('the', 1143), ('and', 966), ('to', 762), ('of', 669), ('i', 631),
+ ('you', 554),  ('a', 546), ('my', 514), ('hamlet', 471), ('in', 451)]
+~~~
+
+
+
+> `fromkeys(iterable)`과 `update[iterable-or-mapping]`을 제외한 대부분의 딕셔너리 메소드가 사용 가능하다.
+
+- #### elements()
+
+~~~python
+>>> c = Counter(a=4, b=2, c=0, d=-2)
+>>> c
+Counter({'a': 4, 'b': 2, 'c': 0, 'd': -2})
+>>> c.elements()
+<itertools.chain object at 0x000002454CC038D0>
+>>> list(c.elements())
+['a', 'a', 'a', 'a', 'b', 'b']
+~~~
+
+- #### most_common([n])
+
+~~~python
+>>> Counter('abracadabra').most_common(3)
+[('a', 5), ('b', 2), ('r', 2)]
+>>> Counter('abracadabra').most_common(1)
+[('a', 5)]
+>>> Counter('abracadabra').most_common(1)[0][0]
+'a'
+~~~
+
+- #### subtract([iterable-or-mapping])
+
+~~~python
+>>> c = Counter(a=4, b=2, c=0, d=-2)
+>>> d = Counter(a=1, b=2, c=3, d=4)
+>>> c.subtract(d)
+>>> c
+Counter({'a': 3, 'b': 0, 'c': -3, 'd': -6})
+~~~
+
+
+
+
+
+## datetime
+
+### datetime.datetime 클래스
 
   - datetime.datetime 클래스 객체 속성 :
 
@@ -706,50 +806,45 @@ ex) 두 수 곱하기
   >
   > strptime() : 문자열로부터 날짜와 시간 정보를 읽어 datetime.datetime 클래스 객체 반환
 
-~~~python
->>> dt = datetime.datetime.now()
->>> dt.date()
-datetime.date(2019, 1, 30)
->>> dt.time()
-datetime.time(17, 40, 45, 963659)
->>> dt.weekday()
-2
->>> dt.strftime("%A %d. %B %Y")
-'Wednesday 30. January 2019'
->>>  dt.strftime("%H hour %M min %S sec")
-'17 hour 50 min 07 sec'
->>> datetime.datetime.strptime("2017-01-02 14:44", "%Y-%m-%d %H:%M")
-datetime.datetime(2017, 1, 2, 14, 44)
+  ~~~python
+  >>> dt = datetime.datetime.now()
+  >>> dt.date()
+  datetime.date(2019, 1, 30)
+  >>> dt.time()
+  datetime.time(17, 40, 45, 963659)
+  >>> dt.weekday()
+  2
+  >>> dt.strftime("%A %d. %B %Y")
+  'Wednesday 30. January 2019'
+  >>>  dt.strftime("%H hour %M min %S sec")
+  '17 hour 50 min 07 sec'
+  >>> datetime.datetime.strptime("2017-01-02 14:44", "%Y-%m-%d %H:%M")
+  datetime.datetime(2017, 1, 2, 14, 44)
+  
+  ~~~
 
-~~~
+  [이어서 정리](https://datascienceschool.net/view-notebook/465066ac92ef4da3b0aba32f76d9750a/)
 
-[이어서 정리](https://datascienceschool.net/view-notebook/465066ac92ef4da3b0aba32f76d9750a/)
-
-
-
-
-
-~~~python
-import datetime
-today = datetime.datetime.now()
-dday = datetime.datetime(2017, 3, 25)
-td = today - dday
-td.days
-
->>>676
-~~~
+  ~~~python
+  import datetime
+  today = datetime.datetime.now()
+  dday = datetime.datetime(2017, 3, 25)
+  td = today - dday
+  td.days
+  
+  >>>676
+  ~~~
 
 
+## numpy(행렬)
 
-### numpy(행렬)
+>  n차원 배열 객체
 
-- n차원 배열 객체
-
-#### 생성 함수
+### 생성 함수
 
 
 
-#### tranpose(전치)
+### tranpose(전치)
 
 - 행렬의 인덱스가 바뀌는 변환
 
@@ -772,7 +867,7 @@ print(numpy.transpose(my_array))
  [3 6]]
 ~~~
 
-#### flatten(1차원 배열로 변환)
+### flatten(1차원 배열로 변환)
 
 ~~~python
 import numpy
@@ -781,7 +876,7 @@ print (my_array.flatten())
 >>> [1 2 3 4 5 6]
 ~~~
 
-#### concatenate(배열 결합)
+### concatenate(배열 결합)
 
 ```python
 # axis=0 방향으로 결합, axis 기본값=0
@@ -799,11 +894,11 @@ print(my_array)
      [4, 5, 6], [10, 11, 12]]
 ```
 
-#### axis
+### axis
 
-### itertools
+## itertools
 
-#### itertools.product()
+### itertools.product()
 
 : cartesian product(곱집합, 데카르트 곱)
 
@@ -829,16 +924,7 @@ print(my_array)
 
 
 
-## builtin functions
+# builtin functions
 
-### hash()
+## hash()
 
-
-
-#### 
-
-
-
-
-
-![]()
