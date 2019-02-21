@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt")
+sys.stdin = open("작업순서_input.txt")
 
 for tc in range(1, 11):
     v, e = map(int, input().split())
@@ -9,7 +9,6 @@ for tc in range(1, 11):
         post[s[i+1]] += [s[i]]
     degree = [len(post[i]) for i in range(v+1)]
     result = []
-
     sdg = sum(degree)
     while sdg > -v:
         for i in range(1, v+1):
@@ -21,7 +20,7 @@ for tc in range(1, 11):
                     if i in post[j]:
                         degree[j] -= 1
                         sdg -= 1
-    print(f'#{tc+1}', *result)
+    print(f'#{tc}', *result)
     # for i in range(1, v+1):
     #     if not post[i] and not visited[i]:
     #         visited[i] = True
