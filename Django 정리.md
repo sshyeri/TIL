@@ -35,7 +35,15 @@ $ pyenv local django-venv
 
 
 
-#### 5. Django 설치
+#### 5. 가상환경 해제
+
+~~~bash
+$ rm -rf .python-version 
+~~~
+
+
+
+#### 6. Django 설치
 
 ~~~bash
 $ pip install django

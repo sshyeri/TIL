@@ -74,6 +74,49 @@ print(scores)
 >>> [67, 68, 69]
 ~~~
 
+# 출력
+
+~~~python
+print(*list, sep='\n')
+~~~
+
+활용시 빈 칸이 개행으로 적용
+
+
+
+# int
+
+## int로 변환하기
+
+### n진수
+
+ int("n진수", n)
+
+~~~python
+>>> int("E75", 16)
+3701
+>>> int("101101",2)
+45
+>>> int("1032", 8)
+538
+~~~
+
+### ASCII
+
+~~~python
+>>> ord('A')
+65
+>>> ord('1')
+49
+>>> ord('-')
+45
+>>> chr(65)
+'A'
+
+~~~
+
+
+
 # float
 
 ### 소수점 이하 몇자리 표현
@@ -922,7 +965,32 @@ print(my_array)
 
 
 
+### itertools.permutations(iterable[,r])
 
+> r 길이의 모든 순열을 반환, 객체로 반환하기 때문에 형변환하여 받아줘야 한다.
+>
+> 순열들은 사전식 순서로 반환되어진다. 따라서, 만일 인풋값이 정렬되어 있다면 순열 튜플들도 정렬되어서 생산되어진다.
+
+~~~python
+>>> from itertools import permutations
+>>> print(permutations([1, 2, 3]))
+<itertools.permutations object at 0x0000023F27AB3EB8>
+>>> print(list(permutations([1, 2, 3])))
+[(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+>>> print(list(permutations([1, 2, 3], 2)))
+[(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
+>>> print(list(permutations('abc', 3)))
+[('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
+
+~~~
+
+
+
+### itertools.combinations(iterable, r)
+
+> r 길이의 모든 조합을 반환, 객체로 반환하기 때문에 형변환하여 받아줘야 한다.
+>
+> 조합들은 사전식 순서로 반환되어진다. 따라서, 만일 인풋값이 정렬되어 있다면 조합 튜플들도 정렬되어서 생산되어진다.
 
 # builtin functions
 

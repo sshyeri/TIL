@@ -31,16 +31,16 @@ def cal(s):
             stack.append(i)
         else:
             if len(stack) > 1:
-                b = stack.pop()
-                a = stack.pop()
+                b = int(stack.pop())
+                a = int(stack.pop())
                 if i == '+':
-                    stack.append(int(a)+int(b))
+                    stack.append(a+b)
                 elif i == '-':
-                    stack.append(int(a)-int(b))
+                    stack.append(a-b)
                 elif i == '*':
-                    stack.append(int(a)*int(b))
+                    stack.append(a*b)
                 elif i == '/':
-                    stack.append(int(a)//int(b))
+                    stack.append(a//b)
     return stack[0]
 for tc in range(1, 11):
     n = int(input())
