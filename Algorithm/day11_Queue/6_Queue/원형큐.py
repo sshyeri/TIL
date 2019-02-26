@@ -1,4 +1,4 @@
-SIZE = 4
+SIZE = 5
 Q = [0]*SIZE
 front, rear = 0, 0
 def isFull():
@@ -20,15 +20,15 @@ def deQueue():
         front = (front+1)%len(Q)
         return Q[front]
 
-
 enQueue(1)
 enQueue(2)
 enQueue(3)
-print(deQueue())
-print(deQueue())
-print(deQueue())
 enQueue(4)
-print(deQueue())
 enQueue(5)
+print(isEmpty())
+print(deQueue())
+print(deQueue())
+print(deQueue())
+print(deQueue())
 print(deQueue())
 print(Q)
