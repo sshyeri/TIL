@@ -2,3 +2,10 @@ h3 {
     color: crimson;
     
 }
+div {
+    background-color: red;
+    text-align: center;
+    width:100%;
+    height:300px;
+    line-height: 300px;
+}
