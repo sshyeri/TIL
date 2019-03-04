@@ -1,13 +1,17 @@
-# def leap(i):
-#     for p in range(i, len(lotus)-1):
-#
-lotus = sorted([int(input()) for _ in range(int(input()))])
-d = [lotus[i]-lotus[i-1] for i in range(1, len(lotus))]
-result = []
+temp = [int(input()) for _ in range(int(input()))]
 
-e = 0
-while e<len(lotus):
+print(temp)
 
-print(lotus)
-print(d)
-print(result)
+cnt = 0
+for i in range(len(lotus)-2):
+    for j in range(i+1, len(lotus)-1):
+        d = lotus[j]-lotus[i]
+        
+        for k in range(j+1, len(lotus)):
+            if d+lotus[j]<= lotus[k] <= 2*d+lotus[j]:
+                cnt += 1
+                print(lotus[i], lotus[j], lotus[k])
+            if lotus[k]>2*d:
+                break
+print(cnt)        
+
