@@ -1,0 +1,392 @@
+[33mcommit 83ab7e482aa81d02b0ad8d6ec6b654a07d34295f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Mar 4 17:58:21 2019 +0900
+
+    0304|tree
+
+[33mcommit 5ccfb21f68ff4e626578fde49e58bbe7b48fc5cc[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Feb 28 16:27:37 2019 +0900
+
+    0228|al
+
+[33mcommit 0c4a561b7fcfb6235cd30aefa497296ae0845c35[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Feb 27 17:56:47 2019 +0900
+
+    0227|algo
+
+[33mcommit 167cd52a70787f01db58217075f545d742294e2f[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Feb 26 18:00:03 2019 +0900
+
+    0226|problems
+
+[33mcommit 932a23d073e238567e998a1e343a450ef43e027f[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Feb 25 18:01:18 2019 +0900
+
+    0225|Queue
+
+[33mcommit ec716879f870b0b3b10e31f406ba6eaa977f3ffb[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Feb 25 07:53:57 2019 +0900
+
+    selfstudy
+
+[33mcommit f5ec934ce6264177506f889e61c8ec4b8f1f6907[m
+Merge: 5edbe75 7390e67
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Feb 21 22:06:27 2019 +0900
+
+    190221|study
+
+[33mcommit 7390e67d7a3f502f205c57e2b0752a5162f5624b[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Feb 19 18:02:23 2019 +0900
+
+    day10|problems
+
+[33mcommit 8f493fbc6ad0364fbaef47b9e7eef5dca7144079[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Feb 18 17:51:11 2019 +0900
+
+    0218|stac2
+
+[33mcommit ec273eee88cf0dab3efe7b4c5b5a77ff27cd274c[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Feb 14 17:47:26 2019 +0900
+
+    0214|python
+
+[33mcommit 5edbe759243f1021d49292f1facabd37953b194e[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Feb 13 22:07:00 2019 +0900
+
+    0213|organize
+
+[33mcommit 1cee7e675bff90fbea774aaabdbdd0fe82731c70[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Feb 13 17:56:03 2019 +0900
+
+    0213|Django_intro
+
+[33mcommit be3d803d55ff9edcd5b033f4e4f4b98b6c0dcd66[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Feb 12 18:02:25 2019 +0900
+
+    0212|stack2
+
+[33mcommit 7904fb9c34a44041337291f9071ae47bbe1d680c[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Feb 11 17:57:39 2019 +0900
+
+    190211|stack
+
+[33mcommit bc3a733d79b78356439d7b55535ea9214bda4a8c[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Feb 7 17:46:18 2019 +0900
+
+    20190207|ORM
+
+[33mcommit e3e2b9dd4fa7b34bf8a735b0a4b66ad6e465b33a[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Fri Feb 1 16:55:58 2019 +0900
+
+    20190201|sql_pj
+
+[33mcommit b4bd00816ae239daae5f4a2f3a6c8a86b11c106b[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 31 17:44:53 2019 +0900
+
+    20190131|sql
+
+[33mcommit 2460d74521fa5b4bb506fe706ff999c67a17acc4[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 30 17:53:46 2019 +0900
+
+    20190130|flask
+
+[33mcommit 101773926990319be8334a6c7e0d781b3f6277fc[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 30 13:05:50 2019 +0900
+
+    20190130|move
+
+[33mcommit 8cfc67fdc9993de516ec81c7523a3bcf1b2e0cc0[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 30 00:37:17 2019 +0900
+
+    20190130|selfstudy
+
+[33mcommit 3a90e6e6674d4bf96a9c7f501bffcea3867db560[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Jan 29 17:55:42 2019 +0900
+
+    20190129|Algorithm_problems
+
+[33mcommit 0eac4783505966aea46017853e10eff04519295b[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Fri Jan 25 17:46:39 2019 +0900
+
+    20190125|project_02_web
+
+[33mcommit aae3f3ef8ea0163962904907deef68be2dff6d54[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 24 18:01:39 2019 +0900
+
+    20190124|bootstrap02
+
+[33mcommit c5ef0e2350c7a0acf24e0353d8b1532db6880f8a[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 23 17:57:25 2019 +0900
+
+    20190123|bootstrap
+
+[33mcommit e413cb245600eed8d4f596b95d563ed310a4000c[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Jan 22 17:54:16 2019 +0900
+
+    20190211|Algorithm_solvingProblems
+
+[33mcommit 8b0b52068a03eed238b80aaeae117409ccce3df7[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Jan 21 18:02:00 2019 +0900
+
+    20190121
+
+[33mcommit cc1f4017d24ec7f8c74e5d50532c956a5d4447b6[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Sun Jan 20 23:55:08 2019 +0900
+
+    20190120_fixfolder
+
+[33mcommit a00e592340a48694f5773128401df372f28522bf[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Fri Jan 18 18:01:03 2019 +0900
+
+    20190118|Python_Project01
+
+[33mcommit ca55ad98c4aab78268d396401e64f1f588ca027e[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 17 17:50:45 2019 +0900
+
+    20190117|Css
+
+[33mcommit 18782e0000076860475107c2847a20f8a4fd0412[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 16 17:47:08 2019 +0900
+
+    20190116|Python_oop+HTML
+
+[33mcommit 4c4590625849c486abbd3b19e98c22d3b7cd173f[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Jan 15 17:53:58 2019 +0900
+
+    20190115|python+Algorithm
+
+[33mcommit f5b0fb0108d188f125cc341e96965762c53f9c0d[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Jan 14 17:48:18 2019 +0900
+
+    20190114|Python_Algorithm
+
+[33mcommit d2af40c34ef9f23290a2b620f382cd052f75d59c[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Fri Jan 11 15:56:06 2019 +0900
+
+    20190111 | Python_oop+Flask
+
+[33mcommit 84d1157a94fe13d37dc60291e4085fbd0e068dc8[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 10 17:44:21 2019 +0900
+
+    20190110 | python | module+error
+
+[33mcommit 572b6015bfa2fa49e61d053036d5ce436eb9181e[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 10 17:30:48 2019 +0900
+
+    20190110 | python | error+module
+
+[33mcommit 73f79a9094c9de140e0e356eb6b30ff2875ccba9[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 9 17:54:07 2019 +0900
+
+    20190109|PYTHON_STL
+
+[33mcommit 6890532c8231feffc00a64ff4e14ff5d6c095cec[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Jan 8 17:51:20 2019 +0900
+
+    20190108 | D05 | Python_DataStructure
+
+[33mcommit 7f0d81ed5dff0f73a1329f8e00e6c8dfa43c04e5[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Jan 7 17:48:02 2019 +0900
+
+    D04 | 190107 PM | CLI+PYTHON
+
+[33mcommit 9797cdbe5bd8583e222486a1f6891f6eeae5c077[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Fri Jan 4 17:47:45 2019 +0900
+
+    190104 | Day03 | CLI
+
+[33mcommit e91d63ebdf1109110a8451636e4c7a64ecc12b2b[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 3 17:50:48 2019 +0900
+
+    D01|190103 PM|02_python
+
+[33mcommit ea515c6b3a24c867bb6b3569d3007e8555876a5e[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 3 17:50:08 2019 +0900
+
+    test
+
+[33mcommit 6a986311a81c9db1cf25751022d639f32a0cd50c[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Jan 3 17:48:58 2019 +0900
+
+    D01|190103 PM|02_python
+
+[33mcommit 571f36798cb8e43617140c7e82014a40b5aab551[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 2 17:50:36 2019 +0900
+
+    D01 | 190102 PM | 01_python_intro
+
+[33mcommit 44a5bd880bafb75648114ba2b049bf0e8b954d44[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Jan 2 13:07:50 2019 +0900
+
+    D01 | 190102 AM | make gitignore
+
+[33mcommit 8c251996d431f58f430090c01302327b55ca76b7[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Dec 27 14:35:22 2018 +0900
+
+    dec27th_second commit
+
+[33mcommit f3f769b9a531197e1a57aa800d906f5c156f6554[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Dec 27 14:19:15 2018 +0900
+
+    dec27th_first commit
+
+[33mcommit 792e4de8c99afd52e1d56c22bbc4292c2cf953aa[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Dec 26 17:52:42 2018 +0900
+
+    dec26th note commit
+
+[33mcommit 326cc4e425d3a6392433162f4708c9f18edc4dc6[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Dec 26 15:03:37 2018 +0900
+
+    dec26th secondcommit
+
+[33mcommit 4d981588a9c09e15f8f6347ca8e51488a64be853[m
+Merge: d29478e d865081
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Dec 26 14:54:45 2018 +0900
+
+    Merge branch 'master' of https://github.com/sshyeri/TIL
+
+[33mcommit d29478e46f020735eba3c5394a1fdfd6f9d57a47[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Dec 26 14:52:13 2018 +0900
+
+    dec26th commit
+
+[33mcommit d865081f09a209f44e252dbbbbba66b9963c6043[m
+Author: sshyeri <45934033+sshyeri@users.noreply.github.com>
+Date:   Wed Dec 26 13:48:55 2018 +0900
+
+    Delete _config.yml
+
+[33mcommit 00ef458fac696030f3cb32a4cc5b952489926a6c[m
+Author: sshyeri <45934033+sshyeri@users.noreply.github.com>
+Date:   Wed Dec 26 13:45:32 2018 +0900
+
+    Update _config.yml
+
+[33mcommit d561b7f8ac73ae198b297724fc59ed0430245040[m
+Author: sshyeri <45934033+sshyeri@users.noreply.github.com>
+Date:   Wed Dec 26 13:44:08 2018 +0900
+
+    Create index.html
+
+[33mcommit 4e7d6d50d818f088d2c34ea6ba3048c74c92ea27[m
+Author: sshyeri <45934033+sshyeri@users.noreply.github.com>
+Date:   Wed Dec 26 13:43:46 2018 +0900
+
+    Create  _config.yml
+
+[33mcommit 583f40168f2ebe80d200a6b9a74c6ddf9587d703[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Fri Dec 21 17:37:31 2018 +0900
+
+    dec21st
+
+[33mcommit e2148d541873cdb84af6d7d22f79735e436dd590[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Thu Dec 20 17:51:38 2018 +0900
+
+    dec20th
+
+[33mcommit ae7af5453fb8cea3cf8d5a2ff7978aabd772470b[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Wed Dec 19 17:45:18 2018 +0900
+
+    dec19th
+
+[33mcommit 843244ef70efe124e52ce78de88983f6f81e5e99[m
+Merge: 0a0e5e1 f4142e8
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Dec 18 17:42:48 2018 +0900
+
+    Merge branch 'master' of https://github.com/sshyeri/TIL
+
+[33mcommit 0a0e5e1ae90ed10a5e847935add2dbf2fad7aaeb[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Dec 18 17:40:19 2018 +0900
+
+    dec_18th_commit
+
+[33mcommit 97ba8ed0e7e7d2b459745fe5f9731f24657fcbf5[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Dec 18 13:14:56 2018 +0900
+
+    fourth commit
+
+[33mcommit 7ff64393b1a70f359ada773ca2f3c0cacc4e65c3[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Tue Dec 18 12:46:16 2018 +0900
+
+    third commit
+
+[33mcommit f4142e8c2e447473b640fe0ec3018a60f58b42a9[m
+Author: sshyeri <45934033+sshyeri@users.noreply.github.com>
+Date:   Mon Dec 17 18:04:17 2018 +0900
+
+    Update github_tutorial.md
+
+[33mcommit 3c02523219ad8464b1b9920575a889edb589dbfa[m
+Author: sshyeri <45934033+sshyeri@users.noreply.github.com>
+Date:   Mon Dec 17 17:58:33 2018 +0900
+
+    Update github_tutorial.md
+
+[33mcommit 250254c37b0d5f9966a1ec2733326fb1dcae45b2[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Dec 17 17:49:52 2018 +0900
+
+    Second commit
+
+[33mcommit db4623a8045f13e888a31bf0d8068191d28bf649[m
+Author: sshyeri <sshyeri.k@gmail.com>
+Date:   Mon Dec 17 17:41:38 2018 +0900
+
+    first commit
