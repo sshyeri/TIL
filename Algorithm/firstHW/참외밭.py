@@ -1,5 +1,7 @@
 N = int(input())
 ds = [[] for _ in range(5)]
+
+# 긴거 전 후 맥스에서 민 빼기
 for i in range(6):
     d, t = map(int, input().split())
     ds[d] += [[i, t]]
