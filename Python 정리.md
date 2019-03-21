@@ -992,7 +992,44 @@ print(my_array)
 >
 > 조합들은 사전식 순서로 반환되어진다. 따라서, 만일 인풋값이 정렬되어 있다면 조합 튜플들도 정렬되어서 생산되어진다.
 
+
+
+## heapq
+
+### heapq.heappush
+
+~~~python
+   for i in range(N):
+       heapq.heappush(heap, temp[i])
+~~~
+
+
+
+### heapq.heapify
+
+```python
+heapq.heapify(temp)
+```
+
+> heapify와 heappush는 같다.(하나씩이냐, 통째로냐의 차이)
+
+
+
+### heapq.heappop
+
+~~~python
+ for i in range(N):
+       print(heapq.heappop(heap), end=" ")
+~~~
+
+
+
+
+
+### 
+
 # builtin functions
 
 ## hash()
 
+*![]()*
