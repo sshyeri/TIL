@@ -11,7 +11,7 @@ def DFS(no): #현재 no번째 상자에 모든 구슬을 순열구조로 담아�
     #2] a배열에서 0요소부터 N전요소전까지 고르는 모든 경우(단 구슬중복 배제)
     for i in range(N):
         if chk[i]:continue
-        b[no] = a[i]
+        b[no] = (no, a[i])
         chk[i] = 1
         DFS(no+1)
         chk[i] = 0
