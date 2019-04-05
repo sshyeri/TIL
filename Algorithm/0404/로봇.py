@@ -18,9 +18,10 @@ def bfs():
                 if not arr[tr][tc] and not chk[d][tr][tc]:
                     chk[d][tr][tc] = 1
                     Q.append((tr, tc, d, cnt+1))
-                    tr += dr[d]
-                    tc += dc[d]
-                else: break
+                elif arr[tr][tc]: break
+                tr += dr[d]
+                tc += dc[d]
+            else: break
     return -1
 dr = (0, 0, 1, -1)
 dc = (1, -1, 0, 0)
