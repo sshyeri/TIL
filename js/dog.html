@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        .btn{
+            height:100px;
+            width:200px;
+            font-size:50px;
+            background-color: pink;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:100px; text-align:center;">🦕🐕🐈🐕🐈🐕🐈🦖</h1>
+    <button type="button" id="dog_btn" class="btn">🐶</button>
+    <button type="button" id="cat_btn" class="btn">🐱</button>
+    <div class="animals"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const getDogImage = function() {
+            //요청을 보내서 가져오면,
+            axios.get('https://dog.ceo/api/breeds/image/random')
+            // 응답은 내용(response)의 response.data.message를 반환하고,
+            .then(response => response.data.message)
+            // 반환된 내용을 url로 담아서
+            .then(url => {
+                // image tag를 만들고
+                const imageTag = document.createElement('img')
+                // url을 이미지 src로 달고
+                imageTag.src = url
+                // 원하는 위치(animals div)에 붙이자.
+                document.querySelector('.animals').prepend(imageTag)
+                console.log('왈왈!!')
+            })
+            //에러처리
+            //.catch(error => )
+        }
+        const btn = document.querySelector('#dog_btn')
+        btn.addEventListener('click', getDogImage )
+        const getCatImage = function() {
+            axios.get('https://api.thecatapi.com/v1/images/search')
+            .then(response => response.data[0].url)
+            .then(url => {
+                const imageTag = document.createElement('img')
+                imageTag.src = url
+                document.querySelector('.animals').prepend(imageTag)
+                console.log('야옹~')
+            })
+        }
+        const btn1 = document.querySelector('#cat_btn')
+        btn1.addEventListener('click', getCatImage )
+
+    </script>
+</body>
+</html>
