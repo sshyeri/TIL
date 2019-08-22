@@ -6,7 +6,7 @@ def BubblesSort(data):
                 print(i, j, data)
 
 data = [55, 7, 78, 12, 42]
-BubbleSoort(data)
+BubbleSort(data)
 data.sort()
 data.reverse()
 print(data)
