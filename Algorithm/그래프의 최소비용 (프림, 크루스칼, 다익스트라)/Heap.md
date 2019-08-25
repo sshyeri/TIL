@@ -38,3 +38,6 @@ void push(int value){
 
 
 
+#### 참고자료
+
+- [TWpower's Tech Blog](https://twpower.github.io/137-heap-implementation-in-cpp)
