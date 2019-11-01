@@ -55,7 +55,7 @@ SSL(Secure Sockey Layer) 프로토콜을 이용. 데이터를 공개키 방식�
    > 배치 방법
    >
    > 1. Normal: 문서 안 위치는 유형, 면적에 따라 배치. 랜더트리에서 DOM트리 위치와 동일
-   > 2. Float: Normal과 같이 배치된 후 왼쪽 or 오른쪽으로 이동
+   > 2. Float: Normal과 같이 배치된  후 왼쪽 or 오른쪽으로 이동
    > 3. Absolute: DOM트리와 다른 트리에 배치.
 
 4. 스타일 변경은 DOM 구조상 제일 끝단 노드에서 수행한다.
