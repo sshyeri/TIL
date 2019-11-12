@@ -312,7 +312,17 @@ KeyboardInterrupt
 '10:34:17'
 ```
 
-# 
+
+
+# list
+
+#### 삭제
+
+​	**remove**(값) - 전달한 값을 삭제 (중복된 경우 처음 나오는 값을 삭제)
+
+​	**pop**(인덱스) - 인덱스에 위치한 값을 리턴하면서 삭제 (인자가 없으면 맨 뒤 값을 pop)
+
+​	**clear**() - 리스트 값 모두 삭제 (빈 리스트 생성)
 
 
 
@@ -560,7 +570,7 @@ class 동물
 
 ~~~python
 class 부모클래스:
-    ~~~~
+~~~~
 class 자식클래스(부모클래스):
     ~~~~
 ~~~
@@ -568,7 +578,7 @@ class 자식클래스(부모클래스):
 **예시 코드**
 
 
-~~~python
+​~~~python
 class Person:
 	def __init__(self, firstName, lastName, idNumber):
 		self.firstName = firstName
